@@ -1,24 +1,18 @@
-.random {
-    color: red;
-    font-size: 20px;
-    /* font-weight: bold; */
-
-}
-
-.button {
-    color: blue;
+.imran
+{
+    color: rgb(143, 101, 101);
     font-size: 20px;
     font-weight: bold;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    transition: box-shadow 0.3s ease-in-out;
+    font-family: jetbrains mono;
 }
-
-.button:hover {
-    box-shadow: 0 0 10px rgba(119, 212, 110, 0.7);
-    background-color: rgb(241, 255, 52);
-    color: rgb(0, 0, 0);
-    transform: scale(1.1); /* Scale the button */
-
+.img1
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.box1
+{
+    color:rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
 }
