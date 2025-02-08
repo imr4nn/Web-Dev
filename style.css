@@ -1,127 +1,24 @@
-/* Reset and base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.random {
+    color: red;
+    font-size: 20px;
+    /* font-weight: bold; */
+
 }
 
-:root {
-    --neon-blue: #00f3ff;
-    --neon-pink: #d400d4;
-    --neon-green: #39ff14;
-    --neon-purple: #bc13fe;
+.button {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-body {
-    font-family: 'jetbrains mono', monospace;
-    background-color: #eeeeee;
-    color: #7a0000;
-}
+.button:hover {
+    box-shadow: 0 0 10px rgba(119, 212, 110, 0.7);
+    background-color: rgb(241, 255, 52);
+    color: rgb(0, 0, 0);
+    transform: scale(1.1); /* Scale the button */
 
-/* Neon text effects */
-.neon-text {
-    text-shadow: 
-        0 0 5px var(--neon-blue),
-        0 0 10px var(--neon-blue),
-        0 0 20px var(--neon-blue),
-        0 0 40px var(--neon-blue);
-    animation: neonPulse 1.5s infinite alternate;
-}
-
-.neon-text-pink {
-    text-shadow: 
-        0 0 5px var(--neon-pink),
-        0 0 10px var(--neon-pink),
-        0 0 20px var(--neon-pink),
-        0 0 40px var(--neon-pink);
-}
-
-/* Navigation with neon border */
-nav {
-    background: rgba(0, 0, 0, 0.8);
-    border: 2px solid var(--neon-blue);
-    box-shadow: 
-        0 0 5px var(--neon-blue),
-        inset 0 0 5px var(--neon-blue);
-    padding: 1rem;
-}
-
-nav a {
-    color: var(--neon-blue);
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-nav a:hover {
-    color: var(--neon-pink);
-    text-shadow: 0 0 10px var(--neon-pink);
-}
-
-/* Neon buttons */
-.neon-btn {
-    background: transparent;
-    border: 2px solid var(--neon-green);
-    color: var(--neon-green);
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: all 0.3s;
-    box-shadow: 0 0 10px var(--neon-green);
-}
-
-.neon-btn:hover {
-    background: var(--neon-green);
-    color: black;
-    box-shadow: 
-        0 0 20px var(--neon-green),
-        0 0 40px var(--neon-green);
-}
-
-/* Neon cards */
-.neon-card {
-    background: rgba(0, 0, 0, 0.8);
-    border: 2px solid var(--neon-purple);
-    box-shadow: 0 0 15px var(--neon-purple);
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 10px;
-}
-
-/* Animations */
-@keyframes neonPulse {
-    from {
-        opacity: 0.8;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes borderFlow {
-    0% { border-color: var(--neon-blue); }
-    33% { border-color: var(--neon-pink); }
-    66% { border-color: var(--neon-green); }
-    100% { border-color: var(--neon-blue); }
-}
-
-/* Neon divider */
-.neon-divider {
-    height: 2px;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        var(--neon-blue),
-        transparent
-    );
-    margin: 2rem 0;
-    box-shadow: 0 0 10px var(--neon-blue);
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .neon-card {
-        margin: 1rem;
-        padding: 1rem;
-    }
 }
