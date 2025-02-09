@@ -1,18 +1,20 @@
-.imran
-{
-    color: rgb(143, 101, 101);
-    font-size: 20px;
-    font-weight: bold;
-    font-family: jetbrains mono;
+.cont1 {
+    background-color: rgb(250, 212, 86);
+    border: 10px solid black;
+    font-family: 'Courier New', Courier, monospace;
 }
-.img1
-{
-    justify-content: center;
-    align-items: center;
-    display: flex;
+
+.cont1:hover {
+    background-color: rgb(231, 231, 231);
+    font-style: italic;
+    /* text-align: center; */
+    /* transition: 1.ms; */
 }
-.box1
-{
-    color:rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
+
+.img1 {
+    height: 100px;
+    border: 10px solid black;
+    border-radius: 50;
+    margin: 0 auto;
+    display: block;
 }
