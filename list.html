@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lists</title>
+    <style>
+        body {
+            /* border: black; */
+            /* border-width: 100px; */
+            color: rgb(141, 91, 16);
+        }
+
+        ol {
+            background-color: black;
+            color: white;
+            border-radius: 2px;
+        }
+
+        li {
+            background-color: blue;
+        }
+
+        dl {
+            /* text-align: center; */
+
+            transition: color 0.3s ease;
+            gap: 10px;
+        }
+
+        dl:hover {
+            color: rgb(0, 0, 0);
+            /* box-shadow: yellow; */
+            text-shadow: yellow;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <h3> <u>Steps To Make A Sandwich</u></h3>
+    <ol>
+        <span>
+            <li>Take bread</li>
+            <li>Open jar of Peanut Butter</li>
+            <li>Spread</li>
+        </span>
+
+    </ol>
+
+    <dl>
+        <dt>Hi</dt>
+        <dd>Hi means hi </dd>
+        <dt>Hi</dt>
+        <dd>Hi means hi </dd>
+        <dt>Hi</dt>
+        <dd>Hi means hi </dd>
+    </dl>
 </body>
+
 </html>
