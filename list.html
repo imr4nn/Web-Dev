@@ -4,59 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lists</title>
+    <title>Document</title>
     <style>
-        body {
-            /* border: black; */
-            /* border-width: 100px; */
-            color: rgb(141, 91, 16);
+        header {
+            font-size: larger;
+            top: 0;
+            display: flex;
+            box-shadow: yellow;
+            /* position: relative; */
+            /* color: red */
+            padding: 14px;
+            justify-content: space-between;
+            background-color: rgb(55, 100, 197);
+            align-items: center;
         }
 
-        ol {
-            background-color: black;
+        header b {
+            font-size: large;
+            /* text-align: justify; */
+            text-decoration: underline;
+        }
+      
+
+        header a {
+            /* display: flex; */
+            padding: 13px;
+            /* margin-right: 0%; */
             color: white;
-            border-radius: 2px;
         }
 
-        li {
-            background-color: blue;
-        }
-
-        dl {
-            /* text-align: center; */
-
-            transition: color 0.3s ease;
-            gap: 10px;
-        }
-
-        dl:hover {
-            color: rgb(0, 0, 0);
-            /* box-shadow: yellow; */
-            text-shadow: yellow;
+        footer {
+            background-color: #ffffff;
+            color: rgb(105, 146, 206);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            text-decoration: underline;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
+    <header>
+        <div><b>Welcome To WeBuy
+            </b>
+        </div>
+        <div>
+            <a href="">Card</a>
+            <a href="">Complain</a>
+            <a href="">Contact</a>
+        </div>
 
-    <h3> <u>Steps To Make A Sandwich</u></h3>
-    <ol>
-        <span>
-            <li>Take bread</li>
-            <li>Open jar of Peanut Butter</li>
-            <li>Spread</li>
-        </span>
+    </header>
+    <main>
 
-    </ol>
-
-    <dl>
-        <dt>Hi</dt>
-        <dd>Hi means hi </dd>
-        <dt>Hi</dt>
-        <dd>Hi means hi </dd>
-        <dt>Hi</dt>
-        <dd>Hi means hi </dd>
-    </dl>
+    </main>
+    <footer>
+        <p>Copyright All Rights Reserved</p>
+    </footer>
 </body>
 
 </html>
