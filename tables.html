@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 2rem;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 15px 25px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        tr:hover {
+            background-color: #f8f9fa;
+            transition: background-color 0.2s ease;
+        }
+
+        td {
+            color: #555;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>There are tables</h2>
+    <h2>These are tables</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Imran</td>
+                <td>18</td>
+                <td>2983892</td>
+
+            </tr>
+            <tr>
+                <td>Imran</td>
+                <td>18</td>
+                <td>192921</td>
+
+            </tr>
+            <tr>
+                <td>Imran</td>
+                <td>18</td>
+                <td>10292</td>
+
+            </tr>
+        </tbody>
+    </table>
 </body>
+
 </html>
