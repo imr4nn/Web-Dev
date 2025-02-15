@@ -20,7 +20,7 @@
             background: #ffffff;
             padding: 15px 40px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
@@ -29,7 +29,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 100%;
+            width: 90%;
         }
 
         .logo-container {
@@ -38,8 +38,7 @@
         }
 
         .logo-container img {
-            height: 50px;
-            /* Adjusted logo size to be more visible */
+            height: 100px; /* Further increased logo size */
             transition: transform 0.3s ease;
         }
 
@@ -59,7 +58,7 @@
             color: rgb(0, 0, 0);
             text-decoration: none;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 18px;
             transition: color 0.3s ease;
         }
 
@@ -68,20 +67,49 @@
             text-decoration: underline;
         }
 
+        /* Main Section with Background */
+        main {
+            background-image: url('img2.png'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        main::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            transition: opacity 0.5s ease;
+        }
+
+        main:hover::before {
+            opacity: 0.3;
+        }
+
         /* Search Bar */
         .search-container {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
         }
 
         .search-container input {
-            width: 50%;
-            padding: 14px;
+            width: 60%;
+            padding: 16px;
             border-radius: 30px;
             border: 2px solid #ff3e6c;
             outline: none;
-            font-size: 18px;
+            font-size: 20px;
             text-align: center;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             transition: 0.3s ease;
