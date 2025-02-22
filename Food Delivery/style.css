@@ -1,0 +1,326 @@
+/* General Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: linear-gradient(135deg, #2a2a2e, #1f1f23);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-left .logo {
+    height: 55px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.nav-left .logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-center a,
+.nav-right a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-center a:hover,
+.nav-right a:hover {
+    color: #d4a5a5;
+    transform: translateY(-2px);
+}
+
+.location {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #d4a5a5;
+}
+
+/* Hero Section (Main) - Using only resd.jpg with added blur */
+main {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('resd.jpg') no-repeat center center/cover;
+    filter: blur(20px) brightness(0.85);
+    /* Increased blur for a dreamier effect, adjusted brightness */
+    z-index: -2;
+    animation: scaleIn 10s infinite alternate ease-in-out;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    /* Lighter overlay for better readability */
+    z-index: -1;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    animation: fadeIn 1.8s ease-out;
+}
+
+.main-content p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    /* Slight shadow for readability */
+}
+
+.main-content .order-btn {
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #d4a5a5, #a57373);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    /* Ensure cursor is a pointer for interactivity */
+    transition: all 0.4s ease;
+}
+
+.main-content .order-btn:hover {
+    background: linear-gradient(135deg, #a57373, #d4a5a5);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Orders Section - Using blended bg1.jpg and resd.jpg */
+.orders {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        /* Lighter overlay */
+        url('bg1.jpg') no-repeat center center/cover,
+        url('resd.jpg') no-repeat center center/cover;
+    color: #fff;
+    position: relative;
+    animation: fadeIn 1.8s ease-out;
+}
+
+.orders h2,
+.order-grid {
+    position: relative;
+    z-index: 2;
+}
+
+.orders h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    /* Slight shadow for readability */
+}
+
+.orders .order-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* Slight padding to soften edges visually */
+}
+
+.orders .order-item {
+    background: rgba(255, 255, 255, 0.08);
+    /* Slightly lighter glass effect */
+    backdrop-filter: blur(10px);
+    /* Reduced blur for better card visibility */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* Softer border for integration */
+    border-radius: 25px;
+    /* Slightly larger radius for smoother edges */
+    padding: 25px;
+    text-align: center;
+    transition: all 0.4s ease;
+    animation: fadeInUp 1.2s ease-out forwards;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.orders .order-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.orders .order-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    /* Match card radius for seamless look */
+    transition: transform 0.4s ease;
+}
+
+.orders .order-item:hover img {
+    transform: scale(1.03);
+}
+
+.orders .order-btn {
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #d4a5a5, #a57373);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    /* Ensure cursor is a pointer for interactivity */
+    transition: all 0.4s ease;
+}
+
+.orders .order-btn:hover {
+    background: linear-gradient(135deg, #a57373, #d4a5a5);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #1f1f23;
+    color: #d4a5a5;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-center,
+    .nav-right {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .main-content h1 {
+        font-size: 2rem;
+    }
+
+    .main-content p {
+        font-size: 1.1rem;
+    }
+
+    .orders {
+        padding: 60px 15px;
+    }
+
+    .orders h2 {
+        font-size: 2rem;
+    }
+
+    .orders .order-item {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-content .order-btn,
+    .orders .order-btn {
+        padding: 10px 20px;
+    }
+}
