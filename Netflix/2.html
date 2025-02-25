@@ -10,6 +10,14 @@
             margin: 0px;
             padding: 5px;
         }
+        body{
+            margin: 24px;
+            padding: 0;
+            position: relative;
+            left: 0px;
+            top: 0px;
+
+        }
 
         .main {
             height: 300px;
@@ -50,12 +58,12 @@
         }
 
         .f {
-            border: 2px solid rgb(90, 88, 88);
+            border: 1px solid rgb(71, 69, 69);
             border-radius: 7px;
             /* gap: 200px; */
             margin: 1px;
-            color: rgb(0, 0, 0);
-            background-color: rgb(255, 255, 255);
+            color: rgb(16, 48, 109);
+            background-color: rgb(211, 211, 211);
             box-shadow: 2px 5px 13px rgb(134, 128, 128);
             padding: 2.5px;
 
@@ -82,7 +90,26 @@
             height: 130px;
 
             font-size: 10px;
-            overflow: hidden;
+        }
+
+        .read-more {
+            position: absolute;
+            color: rgb(0, 0, 0);
+            background-color: rgb(39, 132, 179);
+            border: 0.5px solid rgb(255, 255, 255);
+            border-radius: 12px;
+            padding: 3px;
+            top: 125px;
+            left: 50px;
+        }
+
+        .read-more:hover {
+            color: rgb(0, 0, 0);
+            text-shadow: 3px 4px blur #b42222;
+        }
+
+        .link:visited {
+            color: rgb(0, 0, 0);
         }
     </style>
 </head>
@@ -90,33 +117,30 @@
 <body>
     <div class="main">
         <div class="pic">
-            <img src="Imran.jpeg" alt="" class="picc">
+            <img src="pp.jpeg" alt="" class="picc">
         </div>
         <div class="text1">
-            <span class="f">Sexy </span>
-            <span class="f">Classy</span>
+            <span class="f">CEO</span>
+            <!-- <span class="f">Classy</span> -->
         </div>
         <div class="title">Syed Imran
 
-            
+
             <div class="text2">
 
                 "Introducing Syed Imran, the charismatic and accomplished businessman."
                 "Meet Syed Imran, a dynamic and charismatic businessman whose sharp intellect and striking presence have
                 made him a standout figure in the corporate world. Born into a family with a rich legacy of ambition,
-                Syed Imran carved his own path, blending charm with a relentless drive for success. He founded his first
-                venture in his early twenties, leveraging
-                "Meet Syed Imran, a dynamic and charismatic businessman whose sharp intellect and striking presence have
-                made him a standout figure in the corporate world. Born into a family with a rich legacy of ambition,
-                Syed Imran carved his own path, blending charm with a relentless drive for success. He founded his first
-                venture in his early twenties, leveraging
+                Syed Imran carved his own path, blending charm with a relentless drive for success.
+                <div class="read-more">
+                    <a href="1.html" class="link">Read More</a>
+                </div>
+            </div>
+
+            <div class="readmore">
+                <!-- Read More -->
             </div>
         </div>
-
-        <div class="readmore">
-            <!-- Read More -->
-        </div>
-    </div>
 </body>
 
 </html>
