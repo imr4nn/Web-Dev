@@ -7,42 +7,51 @@
     <title>Basic Design</title>
     <style>
         * {
-            margin: 0px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
         }
 
         .nav {
             position: sticky;
-            top: 0px;
+            top: 0;
             height: 60px;
-            background-color: rgb(37, 34, 37);
-
+            background-color: rgb(185, 41, 185);
+            z-index: 1000;
         }
 
         .parent {
-            margin: 10px;
+            margin: 20px auto;
             height: 400px;
-            top: 1px;
-            background-color: green;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
             width: 90%;
-            padding: 55px;
+            padding: 20px;
+            background-color: green;
+            border-radius: 10px;
         }
 
         .box {
-
-            height: 270px;
-            width: 500px;
-            margin: 70px;
+            height: 60vh;
+            width: 42%;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.2);
         }
 
         .box1 {
-            background-color: rgb(0, 0, 0);
-
-
+            background-color: rgb(214, 158, 158);
         }
 
         .box2 {
-            background-color: rgb(252, 252, 252);
+            background-color: rgb(29, 49, 231);
         }
 
         .text {
@@ -52,59 +61,42 @@
             text-align: center;
             border: 2px solid rgb(216, 202, 202);
             border-radius: 50px;
-            box-shadow: 9px 4px 10px rgb(109, 61, 61);
+            box-shadow: 4px 4px 10px rgb(109, 61, 61);
             width: 50vw;
-
-            margin: auto;
+            margin: 40px auto;
             padding: 20px;
-            top: 20px;
-            font-size: 60px;
-
-        }
-
-        .not {
             font-size: 40px;
         }
 
-
         img {
-            width: 40px;
+            width: 50px;
             position: fixed;
             right: 10px;
-            border-radius: 90px;
+            bottom: 10px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 10px white;
         }
     </style>
 </head>
 
 <body>
 
-
-    <nav>
-
-    </nav>
-
+    <nav class="nav"></nav>
 
     <div class="main">
-        <div class="nav"></div>
         <div class="parent">
             <div class="box box1"></div>
             <div class="box box2"></div>
-
         </div>
-        <img src="Imran.jpeg" alt="">
 
-        <div class="text"> Welcome to Grand Web Dev Course <span class="not">Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Nam minus similique fugiat sint libero suscipit voluptatem molestiae? Consectetur
-                explicabo nisi, amet nostrum repellendus, debitis mollitia aperiam eveniet nesciunt maxime dignissimos
-                porro odit obcaecati fugiat, dolor quasi itaque voluptatibus. Excepturi ipsum libero quisquam voluptatem
-                quas! Incidunt, architecto neque explicabo ipsum ducimus molestias eligendi hic pariatur exercitationem.
-                Veniam, unde. Eum quis maxime nulla quae autem dignissimos animi quo sunt, error, ea a quasi labore
-                maiores ullam! Culpa asperiores ut beatae dicta perspiciatis. At, officiis dolores! Voluptatem quas
-                illum doloremque obcaecati quia sunt consectetur non saepe similique magni nostrum, est numquam enim
-                suscipit?</span>
+        <img src="Imran.jpeg" alt="Image">
+
+        <div class="text"> Welcome to Grand Web Dev Course 
+            <br> Enjoy Hands-On Tutorial
         </div>
 
     </div>
+
 </body>
 
 </html>
