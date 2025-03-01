@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,7 @@
     <style>
         .parent {
             margin: 30px;
-            height: 80vh;
+            height: 2vh;
             border: 2px solid green;
             padding: 100px;
             display: flex;
@@ -30,29 +29,28 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            transition: all 0.3s ease-out;
         }
 
         .box1 {
             background-color: rgb(206, 18, 18);
-            transition: all 0.3s ease-out;
+            transition: transform 0.3s ease-out, background-color 0.3s ease-out;
         }
 
-        .box1:hover {
-            transform: translateX(-120px) scale(0.5);
-
-
-
+        /* When hovering over .box2, also affect .box1 */
+        .parent:hover .box1 {
+            transform: translateY(-60px) scale(0.5);
+            background-color: rgb(100, 72, 72);
+            border: none;
         }
 
         .box2 {
             background-color: rgb(55, 235, 55);
-            transition: all 0.8s ease-out;
-
+            transition: transform 0.8s ease-out;
         }
 
         .box2:hover {
             transform: scale(1.2);
-
         }
 
         .text {
@@ -62,25 +60,20 @@
             margin-bottom: 20px;
         }
 
-        /* POPUP EFFECT */
-
-
         a {
             color: black;
             text-decoration: none;
         }
     </style>
 </head>
-
 <body>
 
     <h3 class="text">DO YOU LOVE ME?</h3>
 
     <div class="parent">
         <div class="box box1">NO 🙄</div>
-        <div class="box box2"> <a href="ily2.html">YESSS! 😍 </a></div>
+        <div class="box box2"> <a href="ily2.html">YESSS! 😍</a></div>
     </div>
 
 </body>
-
 </html>

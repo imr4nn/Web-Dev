@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS</title>
+    <style>
+        @keyframes my {
+            from {
+                background-color: rgb(241, 0, 0);
+                /* opacity: 0; */
+                transform: translateY(0px);
+            }
+
+            to {
+                background-color: rgb(128, 56, 223);
+                /* opacity: 1; */
+                transform: translateY(48vh);
+            }
+        }
+
+        @keyframes u {
+            from {
+                background-color: rgb(255, 255, 255);
+            }
+
+            to {
+                background-color: rgb(27, 40, 44);
+            }
+
+        }
+
+        @keyframes me {
+            20% {
+                transform: rotate(16deg);
+            }
+
+        }
+
+
+        .parent {
+            background-color: rgb(161, 158, 158);
+            height: 70vh;
+            width: 50vw;
+            animation: u 4s;
+            animation-fill-mode: forwards;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+
+        .child {
+            position: relative;
+            /* top: 30px; */
+            /* background-color: black */
+            height: 20vh;
+            width: 40vw;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: my 5s, me 3s ease-in-out 2s infinite alternate forwards  ;
+            animation-delay: 2s;
+            /* animation: me 5s; */
+
+            /* animation-timing-function: ease; */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate; */
+            animation-fill-mode: forwards;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="parent">
+
+        <div class="child"></div>
+
+    </div>
+
+</body>
+
+</html>
