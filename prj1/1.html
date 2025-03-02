@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pics</title>
+    <style>
+        * {
+            margin: 2px;
+
+        }
+
+        body {
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+
+        .parent {
+
+            display: flex;
+            justify-content: center;
+            object-fit: cover;
+            height: 300px;
+            width: 400px;
+            border: 2px solid black;
+
+        }
+
+
+        .img {
+            filter: blur(10px);
+            animation: s 7s ease-in-out infinite forwards alternate;
+        }
+
+        @keyframes s {
+            from {
+                filter: grayscale(2);
+                scale: 0.5;
+                opacity: 0;
+                border-radius: 0px;
+            }
+
+            to {
+                filter: grayscale(0);
+                opacity: 1;
+                border-radius: 60%;
+
+                scale: 1;
+
+            }
+
+        }
+    </style>
+</head>
+
+
+<div class="parent">
+    <img src="piza.jpeg" alt="" class="img">
+</div>
+
+<body>
+
+</body>
+
+</html>
