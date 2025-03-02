@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: red;
+            border-radius: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: Y 0.9s ease-out infinite alternate, X 11s infinite alternate;
+
+
+
+        }
+
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 100vw;
+            background-color: rgb(7, 7, 14);
+            animation: c 7s infinite alternate;
+        }
+
+        @keyframes X {
+            from {
+                left: 0%;
+
+            }
+
+            to {
+                left: 100%;
+
+            }
+        }
+
+        @keyframes Y {
+            from {
+                bottom: 0%;
+
+
+            }
+
+            to {
+                bottom: 90%;
+
+            }
+        }
+
+        @keyframes c {
+            from {
+
+            }
+
+            to {
+               background-color:  rgb(255, 217, 48);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+        </div>
+    </div>
+    <!-- 
+   
+     -->
+</body>
+
+</html>
