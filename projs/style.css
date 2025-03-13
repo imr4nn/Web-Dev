@@ -1,0 +1,45 @@
+* {
+    margin: 4;
+}
+
+@keyframes imran {
+    from {
+        scale: 0;
+        color: black;
+    }
+
+    to {
+        scale: 1.5;
+        color: rgb(255, 131, 131);
+
+    }
+}
+
+@keyframes underline {
+    from {
+        text-decoration: underline;
+
+    }
+
+    to {
+        text-decoration: underline;
+
+
+    }
+}
+
+ul {
+    gap: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    animation: imran 2s forwards ease-in;
+
+}
+
+ul :hover {
+    color: rgb(233, 0, 0);
+    animation: underline 0.4s forwards;
+    
+}

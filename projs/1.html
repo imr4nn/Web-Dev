@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Animated J</title>
+    <style>
+        #letter {
+            font-size: 24px;
+            font-weight: bold;
+            transition: color 0.5s ease, transform 0.5s ease;
+            display: inline-block;
+        }
+
+        .animate {
+            color: red;
+            transform: scale(1.5);
+            /* Increases size */
+        }
+    </style>
+</head>
+
+<body>
+
+    <span id="letter">J</span>
+    <button onclick="toggleAnimation()">Click Me</button>
+
+    <script>
+        function toggleAnimation() {
+            let letter = document.getElementById("letter");
+            letter.classList.toggle("animate");
+        }
+    </script>
+
+</body>
+
+</html>
