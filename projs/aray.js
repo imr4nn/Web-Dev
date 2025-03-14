@@ -1,9 +1,11 @@
-let a = [1, 4, 7, 8, 2];
-console.log(a)
+const func = () => {
+    console.log("aray.js");
+}
 
-
-
-let arr = [];
-
-
-// console.log(a.length)
+let fun = () => {
+    return "aray.js";
+}
+let arr = [1, 5, 2, 4, 6];
+arr.sort();
+let b = arr.map((x) => x ** 2);
+console.log(b);
